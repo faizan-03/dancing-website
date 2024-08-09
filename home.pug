@@ -1,0 +1,48 @@
+extends base.pug
+
+block scripts
+  script(src='..//static/index.js')
+ 
+block style 
+  style 
+    include ../static/style.css
+
+block content 
+  section#introSection 
+    div Wellcome to mimi academy 
+    div.small Live to learn dance 
+
+  section#ourmission 
+    h2 Our Mission 
+    div.card 
+      h3 Dance Perfection 
+      div.card-box 
+        div.card-img 
+          img(src="/static/b1.jpg", alt="photo")
+        div.card-content 
+          p Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+
+    div.card 
+      h3 Dance the way you like  
+      div.card-box 
+        div.card-img 
+          img(src="/static/b2.jpg", alt="photo")
+        div.card-content 
+          p Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde 
+
+    div.card 
+      h3 Expert teaching
+      div.card-box 
+        div.card-img 
+          img(src="/static/b3.jpg", alt="photo")
+        div.card-content 
+          p Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+
+  section#sponsorsSection 
+    h2 Our sponsors 
+    div#sponsors.spimg  
+      img(src="/static/s7.png", alt="s_photo")
+      img(src="/static/s8.png", alt="s_photo")
+      img(src="/static/s6.png", alt="s_photo")
+      img(src="/static/s5.png", alt="s_photo")
+
